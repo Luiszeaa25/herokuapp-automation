@@ -1,0 +1,29 @@
+{
+    "default":{
+        "formatOptions":{
+            "snippetInterface": "async.await"
+        },
+        "paths": [
+            "features/**/*.feature"
+        ],
+        "import":[
+            "steps/**/*.ts",
+            "support/**/*.ts"
+        ],
+        "loader":[
+            "ts-node/esm"
+        ],
+        "format": [
+
+            "progress-bar",
+            "summary",
+            "allure-cucumberjs/reporter"
+        ],
+        "publishQuiet": true,
+        "dryRun": false,
+        "timeout": 30000
+        
+
+    }
+
+}
