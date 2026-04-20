@@ -1,23 +1,23 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1512","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1375","login validation - invalid login - sanity","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1487","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1502","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1426","login validation - invalid login - sanity","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1365","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1423","login validation - empty login - sanity","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1447","login validation - invalid login - regression","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1417","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1412","login validation - invalid login - regression","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1422","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","2463","login validation - valid login","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1432","login validation - invalid login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1427","login validation - invalid login - regression","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1503","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1426","login validation - empty login - sanity","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1446","login validation - invalid login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1365","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","2435","login validation - valid login","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1451","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1418","login validation - invalid login - regression","","2026-04-20","passed","2026-04-20","","","",""
+    so that I can access protected resources based on valid credentials.","1386","login validation - empty login - regression","","2026-04-20","passed","2026-04-20","","","",""
