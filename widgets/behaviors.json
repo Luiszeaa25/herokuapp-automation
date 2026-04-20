@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"7d8d7f2ae386006865d536408107fb31","name":"Login Page Herokuapp","statistic":{"failed":0,"broken":0,"skipped":0,"passed":11,"unknown":0,"total":11}}]}
+{"total":2,"items":[{"uid":"7d8d7f2ae386006865d536408107fb31","name":"Login Page Herokuapp","statistic":{"failed":0,"broken":0,"skipped":0,"passed":11,"unknown":0,"total":11}},{"uid":"58a2102e3e63d7479c65309232055ef0","name":"Drag and Drop Functionality on Herokuapp","statistic":{"failed":0,"broken":0,"skipped":0,"passed":6,"unknown":0,"total":6}}]}
