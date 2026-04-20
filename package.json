@@ -4,7 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-"test": "cucumber-js --config cucumber.json",
+  "test": "cucumber-js --config cucumber.json",
     "test:smoke": "cucumber-js --config cucumber.json --tags \"@smoke\"",
     "test:sanity": "cucumber-js --config cucumber.json --tags \"@sanity\"",
     "test:regression": "cucumber-js --config cucumber.json --tags \"@regression\"",
