@@ -1,0 +1,102 @@
+2026-04-27 21:43:56 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:43:57 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:43:58 [INFO]: Verificando mensaje de éxito en pantalla
+2026-04-27 21:43:58 [INFO]: Validando redirección exitosa a la Home Page
+2026-04-27 21:43:58 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:43:59 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:43:59 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:43:59 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:00 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:00 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:00 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:01 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:02 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:02 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:03 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:03 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:03 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:04 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:04 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:05 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:06 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:06 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:06 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:07 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:07 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:07 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:08 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:09 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:09 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:10 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:10 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:44:10 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:44:11 [INFO]: Autentificación con el usuario: ${user}
+2026-04-27 21:44:11 [INFO]: Validando mensaje de error esperado: ${errorType}
+2026-04-27 21:45:57 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:45:58 [INFO]: Autentificación con el usuario: tomsmith
+2026-04-27 21:45:58 [INFO]: Verificando mensaje de éxito en pantalla
+2026-04-27 21:45:58 [INFO]: Validando redirección exitosa a la Home Page
+2026-04-27 21:45:59 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:00 [INFO]: Autentificación con el usuario: invalidUser
+2026-04-27 21:46:00 [INFO]: Validando mensaje de error esperado: invalidCredentials
+2026-04-27 21:46:00 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:01 [INFO]: Autentificación con el usuario: invalidUser
+2026-04-27 21:46:01 [INFO]: Validando mensaje de error esperado: invalidCredentials
+2026-04-27 21:46:02 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:03 [INFO]: Autentificación con el usuario: tomsmith
+2026-04-27 21:46:03 [INFO]: Validando mensaje de error esperado: invalidPassword
+2026-04-27 21:46:03 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:04 [INFO]: Autentificación con el usuario: invalidUser
+2026-04-27 21:46:04 [INFO]: Validando mensaje de error esperado: invalidUsername
+2026-04-27 21:46:04 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:05 [INFO]: Autentificación con el usuario: 
+2026-04-27 21:46:06 [INFO]: Validando mensaje de error esperado: emptyUsernameAndPass
+2026-04-27 21:46:06 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:07 [INFO]: Autentificación con el usuario: 
+2026-04-27 21:46:07 [INFO]: Validando mensaje de error esperado: emptyUsernameAndPass
+2026-04-27 21:46:07 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:08 [INFO]: Autentificación con el usuario: 
+2026-04-27 21:46:08 [INFO]: Validando mensaje de error esperado: emptyUsername
+2026-04-27 21:46:09 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:10 [INFO]: Autentificación con el usuario: tomsmith
+2026-04-27 21:46:10 [INFO]: Validando mensaje de error esperado: emptyPassword
+2026-04-27 21:46:10 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:11 [INFO]: Autentificación con el usuario: invalidUser
+2026-04-27 21:46:11 [INFO]: Validando mensaje de error esperado: emptyPasswordInvalidUser
+2026-04-27 21:46:11 [INFO]: Navegación a la página de login de Herokuapp
+2026-04-27 21:46:12 [INFO]: Autentificación con el usuario: 
+2026-04-27 21:46:13 [INFO]: Validando mensaje de error esperado: emptyUsername
+2026-04-27 21:52:30 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:31 [info]: Autentificación con el usuario: tomsmith
+2026-04-27 21:52:31 [info]: Verificando mensaje de éxito en pantalla
+2026-04-27 21:52:31 [info]: Validando redirección exitosa a la Home Page
+2026-04-27 21:52:31 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:32 [info]: Autentificación con el usuario: invalidUser
+2026-04-27 21:52:33 [info]: Validando mensaje de error esperado: invalidCredentials
+2026-04-27 21:52:33 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:34 [info]: Autentificación con el usuario: invalidUser
+2026-04-27 21:52:34 [info]: Validando mensaje de error esperado: invalidCredentials
+2026-04-27 21:52:34 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:35 [info]: Autentificación con el usuario: tomsmith
+2026-04-27 21:52:35 [info]: Validando mensaje de error esperado: invalidPassword
+2026-04-27 21:52:35 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:36 [info]: Autentificación con el usuario: invalidUser
+2026-04-27 21:52:37 [info]: Validando mensaje de error esperado: invalidUsername
+2026-04-27 21:52:37 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:38 [info]: Autentificación con el usuario: 
+2026-04-27 21:52:38 [info]: Validando mensaje de error esperado: emptyUsernameAndPass
+2026-04-27 21:52:38 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:39 [info]: Autentificación con el usuario: 
+2026-04-27 21:52:40 [info]: Validando mensaje de error esperado: emptyUsernameAndPass
+2026-04-27 21:52:40 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:41 [info]: Autentificación con el usuario: 
+2026-04-27 21:52:41 [info]: Validando mensaje de error esperado: emptyUsername
+2026-04-27 21:52:41 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:42 [info]: Autentificación con el usuario: tomsmith
+2026-04-27 21:52:42 [info]: Validando mensaje de error esperado: emptyPassword
+2026-04-27 21:52:42 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:44 [info]: Autentificación con el usuario: invalidUser
+2026-04-27 21:52:44 [info]: Validando mensaje de error esperado: emptyPasswordInvalidUser
+2026-04-27 21:52:44 [info]: Navegación a la página de login de Herokuapp
+2026-04-27 21:52:45 [info]: Autentificación con el usuario: 
+2026-04-27 21:52:45 [info]: Validando mensaje de error esperado: emptyUsername

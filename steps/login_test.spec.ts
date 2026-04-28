@@ -13,7 +13,7 @@ Given('The user is on the Herokuapp LoginPage', async function (this: CustomWorl
 When('The user enters {string} and {string} and clicks on the login button', async function (
     this: CustomWorld, user: string, pass: string) {
     
-    logger.info('Autentificación con el usuario: ${user}');
+    logger.info(`Autentificación con el usuario: ${user}`);
     await this.loginpage.login(user,pass);
 });
 
@@ -31,7 +31,7 @@ Then('The user should be redirected to the home page', async function () {
 Then('The user should see {string} error message', async function (this:
     CustomWorld, errorType: string) {
 
-        logger.info('Validando mensaje de error esperado: ${errorType}');
+    logger.info(`Validando mensaje de error esperado: ${errorType}`);
         await this.loginpage.verifyLoginErrorMessage(errorType);
 
 });

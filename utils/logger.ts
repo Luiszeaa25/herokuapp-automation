@@ -1,32 +1,40 @@
 import {createLogger, format, transports } from 'winston';
+import fs from 'fs';
+import path from 'path';
 
-const logFormat = format.combine(
-    format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-    format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
-);
+const logDir = path.resolve(process.cwd(), 'logs');
+if (!fs.existsSync(logDir)){
+    fs.mkdirSync(logDir, {recursive: true});
+}
+
+const customFormat = format.printf(({ timestamp, level, message }) => {
+    return `${timestamp} [${level}]: ${message}`;
+});
 
 export const logger = createLogger({
-
     level: 'info',
-    format: logFormat,
+    format: format.combine(
+        format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        format.errors({ stack: true }),
+        format.splat(),
+        format.json()
+    ),
     transports: [
-
-        // Logs en en la consola
+        
         new transports.Console({
-            format: format.combine(format.colorize(),logFormat)
+            format: format.combine(
+                format.colorize(),
+                format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+                customFormat
+            )
         }),
-
-        //Guardado de logs en archivo
+        
         new transports.File({
-            filename: 'logs/combined.log',
-            maxsize: 5242880,
-            maxFiles: 5,
-        }),
-
-        new transports.File({
-
-            filename: 'logs/error.log',
-            level: 'error'
+            filename: path.join(logDir, 'combined.log'),
+            format: format.combine(
+                format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+                customFormat
+            )
         })
     ]
 });
