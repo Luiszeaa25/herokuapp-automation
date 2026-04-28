@@ -4,7 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-  "test": "cucumber-js --config cucumber.json",
+    "test": "cucumber-js --config cucumber.json",
     "test:smoke": "cucumber-js --config cucumber.json --tags \"@smoke\"",
     "test:sanity": "cucumber-js --config cucumber.json --tags \"@sanity\"",
     "test:regression": "cucumber-js --config cucumber.json --tags \"@regression\"",
@@ -16,7 +16,7 @@
     "test:sanity:report": "npm run clean && npm run test:sanity && npm run report",
     "test:regression:report": "npm run clean && npm run test:regression && npm run report",
     "test:report": "npm run clean && npm test && npm run report"
-    },
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -25,9 +25,13 @@
     "@cucumber/cucumber": "^12.8.1",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
+    "@types/winston": "^2.4.4",
     "allure-commandline": "^2.38.1",
     "allure-cucumberjs": "^3.7.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "winston": "^3.19.0"
   }
 }
