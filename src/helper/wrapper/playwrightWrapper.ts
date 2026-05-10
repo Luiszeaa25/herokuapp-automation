@@ -28,6 +28,7 @@ export default class PlaywrightWrapper {
         await source.hover();
         await this.page.mouse.down();
         const box = await target.boundingBox();
+        if (!box) throw new Error(`Target element not visible or not found`);
         await this.page.mouse.move(
             box.x + box.width / 2,
             box.y + box.height / 2,

@@ -38,7 +38,7 @@ Before(async function ({ pickle }) {
 
 After(async function ({ pickle, result }) {
     const tracePath = `./test-results/trace/${pickle.id}.zip`;
-    let img: Buffer;
+    let img: Buffer | undefined;
 
     if (result?.status === Status.FAILED) {
         img = await fixture.page.screenshot({
@@ -54,7 +54,7 @@ After(async function ({ pickle, result }) {
     await fixture.page.close();
     await context.close();
 
-    if (result?.status === Status.FAILED) {
+    if (result?.status === Status.FAILED && img) {
         await this.attach(img, "image/png");
         await this.attach(
             `<a href="https://trace.playwright.dev/">Open ${tracePath}</a>`,

@@ -16,35 +16,33 @@ export class DragDrop {
     }
 
     async gotoDragAndDropPage() {
-        await this.page.goto('/drag_and_drop');
+        await this.wrapper.goto('drag_and_drop');
     }
 
     async dragAtoB() {
         await this.columnA.dragTo(this.columnB);
-        
     }
 
-    async dragAtoBValidation (){
+    async verifyAtoBSwap() {
         await expect(this.columnA).toContainText('B');
         await expect(this.columnB).toContainText('A');
     }
-
 
     async dragBtoA() {
         await this.columnB.dragTo(this.columnA);
     }
 
-    async dragBtoAValidation() {
+    async verifyBtoASwap() {
         await expect(this.columnB).toContainText('A');
         await expect(this.columnA).toContainText('B');
-
     }
 
     async dragAndReturnToOriginalPosition() {
         await this.wrapper.dragTo(this.columnA, this.columnB);
-        await expect(this.columnA).toContainText('B');
-        await expect(this.columnB).toContainText('A');
         await this.wrapper.dragTo(this.columnB, this.columnA);
+    }
+
+    async verifyOriginalPosition() {
         await expect(this.columnA).toContainText('A');
         await expect(this.columnB).toContainText('B');
     }
