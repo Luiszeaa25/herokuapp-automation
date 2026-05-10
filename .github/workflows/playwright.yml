@@ -14,6 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chrome, firefox, webkit]
+
     steps:
       - uses: actions/checkout@v4
 
@@ -28,21 +34,77 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Playwright tests
+      - name: Run tests on ${{ matrix.browser }}
+        env:
+          BASEURL: https://the-internet.herokuapp.com/
+          BROWSER: ${{ matrix.browser }}
+          HEAD: "false"
+          ENV: prod
         run: |
           npm run clean
           npm test || true
 
-      - name: Generate Allure Report
-        run: npm run report:generate
-
-      - name: Upload Execution Logs
+      - name: Upload allure-results (${{ matrix.browser }})
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright.logs
+          name: allure-results-${{ matrix.browser }}
+          path: allure-results/
+          retention-days: 7
+
+      - name: Upload logs (${{ matrix.browser }})
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ matrix.browser }}
           path: logs/
           retention-days: 7
+
+  report:
+    needs: test
+    runs-on: ubuntu-latest
+    if: always()
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download allure-results (chrome)
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-chrome
+          path: allure-results/chrome
+
+      - name: Download allure-results (firefox)
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-firefox
+          path: allure-results/firefox
+
+      - name: Download allure-results (webkit)
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results-webkit
+          path: allure-results/webkit
+
+      - name: Merge allure-results
+        run: |
+          mkdir -p allure-results/merged
+          cp -r allure-results/chrome/. allure-results/merged/ 2>/dev/null || true
+          cp -r allure-results/firefox/. allure-results/merged/ 2>/dev/null || true
+          cp -r allure-results/webkit/. allure-results/merged/ 2>/dev/null || true
+
+      - name: Generate Allure Report
+        run: npx allure generate allure-results/merged --clean -o allure-report
 
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4

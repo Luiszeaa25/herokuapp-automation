@@ -1,4 +1,4 @@
-
+@dragdrop
 Feature:  Drag and Drop Functionality on Herokuapp
 
     As a user of the Herokuapp, I want to be able to drag and drop elements on
