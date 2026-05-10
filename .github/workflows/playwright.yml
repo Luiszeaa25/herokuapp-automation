@@ -44,6 +44,12 @@ jobs:
           npm run clean
           npm test || true
 
+      - name: Check allure-results exists
+        if: always()
+        run: |
+          echo "Contents of allure-results:"
+          ls -la allure-results/ || echo "allure-results/ is empty or does not exist"
+
       - name: Upload allure-results (${{ matrix.browser }})
         if: always()
         uses: actions/upload-artifact@v4
@@ -51,6 +57,7 @@ jobs:
           name: allure-results-${{ matrix.browser }}
           path: allure-results/
           retention-days: 7
+          if-no-files-found: warn
 
       - name: Upload logs (${{ matrix.browser }})
         if: always()
@@ -59,6 +66,7 @@ jobs:
           name: logs-${{ matrix.browser }}
           path: logs/
           retention-days: 7
+          if-no-files-found: warn
 
   report:
     needs: test
@@ -79,29 +87,34 @@ jobs:
         run: npm ci
 
       - name: Download allure-results (chrome)
+        continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           name: allure-results-chrome
           path: allure-results/chrome
 
       - name: Download allure-results (firefox)
+        continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           name: allure-results-firefox
           path: allure-results/firefox
 
       - name: Download allure-results (webkit)
+        continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           name: allure-results-webkit
           path: allure-results/webkit
 
-      - name: Merge allure-results
+      - name: Merge and check allure-results
         run: |
           mkdir -p allure-results/merged
           cp -r allure-results/chrome/. allure-results/merged/ 2>/dev/null || true
           cp -r allure-results/firefox/. allure-results/merged/ 2>/dev/null || true
           cp -r allure-results/webkit/. allure-results/merged/ 2>/dev/null || true
+          echo "Merged allure-results:"
+          ls -la allure-results/merged/ || echo "No results to merge"
 
       - name: Generate Allure Report
         run: npx allure generate allure-results/merged --clean -o allure-report

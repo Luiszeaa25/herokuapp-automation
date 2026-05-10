@@ -1,7 +1,8 @@
 module.exports = {
     default: {
         formatOptions: {
-            snippetInterface: "async-await"
+            snippetInterface: "async-await",
+            resultsDir: "allure-results"
         },
         paths: ["src/test/features/**/*.feature"],
         import: [
