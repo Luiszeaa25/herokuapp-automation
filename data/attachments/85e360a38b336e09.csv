@@ -1,0 +1,4 @@
+username,password,errorType
+invalidUser,invalidPass,invalidCredentials
+tomsmith,invalidPass,invalidPassword
+invalidUser,SuperSecretPassword!,invalidUsername
