@@ -1,29 +1,29 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1799","login validation - invalid login - sanity","","2026-05-10","passed","2026-05-10","","","",""
 "As a user of the Herokuapp, I want to be able to drag and drop elements on
-    the page.","1573","Drag and Drop element B to element A and then back to original position","","2026-05-10","passed","2026-05-10","","","",""
+    the page.","498","Drag and Drop element B to element A","","2026-05-10","passed","2026-05-10","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1927","login validation - invalid login - regression","","2026-05-10","passed","2026-05-10","","","",""
+    so that I can access protected resources based on valid credentials.","828","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1765","login validation - invalid login - regression","","2026-05-10","passed","2026-05-10","","","",""
+    so that I can access protected resources based on valid credentials.","744","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
+"As a registered user I want to authenticate into the Herokuapp application
+    so that I can access protected resources based on valid credentials.","724","login validation - invalid login - regression","","2026-05-10","passed","2026-05-10","","","",""
+"As a registered user I want to authenticate into the Herokuapp application
+    so that I can access protected resources based on valid credentials.","701","login validation - invalid login - regression","","2026-05-10","passed","2026-05-10","","","",""
+"As a registered user I want to authenticate into the Herokuapp application
+    so that I can access protected resources based on valid credentials.","662","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
+"As a registered user I want to authenticate into the Herokuapp application
+    so that I can access protected resources based on valid credentials.","901","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
+"As a registered user I want to authenticate into the Herokuapp application
+    so that I can access protected resources based on valid credentials.","751","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
 "As a user of the Herokuapp, I want to be able to drag and drop elements on
-    the page.","1492","Drag and Drop element B to element A","","2026-05-10","passed","2026-05-10","","","",""
+    the page.","530","Drag and Drop element B to element A and then back to original position","","2026-05-10","passed","2026-05-10","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1788","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
+    so that I can access protected resources based on valid credentials.","696","login validation - valid login","","2026-05-10","passed","2026-05-10","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1846","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
+    so that I can access protected resources based on valid credentials.","728","login validation - empty login - sanity","","2026-05-10","passed","2026-05-10","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1749","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
+    so that I can access protected resources based on valid credentials.","714","login validation - invalid login - regression","","2026-05-10","passed","2026-05-10","","","",""
 "As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1740","login validation - empty login - sanity","","2026-05-10","passed","2026-05-10","","","",""
-"As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","2461","login validation - valid login","","2026-05-10","passed","2026-05-10","","","",""
-"As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1764","login validation - invalid login - regression","","2026-05-10","passed","2026-05-10","","","",""
-"As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1783","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
-"As a registered user I want to authenticate into the Herokuapp application
-    so that I can access protected resources based on valid credentials.","1810","login validation - empty login - regression","","2026-05-10","passed","2026-05-10","","","",""
+    so that I can access protected resources based on valid credentials.","679","login validation - invalid login - sanity","","2026-05-10","passed","2026-05-10","","","",""
 "As a user of the Herokuapp, I want to be able to drag and drop elements on
-    the page.","2450","Drag and Drop element A to element B","","2026-05-10","passed","2026-05-10","","","",""
+    the page.","610","Drag and Drop element A to element B","","2026-05-10","passed","2026-05-10","","","",""
