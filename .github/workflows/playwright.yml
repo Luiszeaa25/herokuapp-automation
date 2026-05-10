@@ -44,6 +44,14 @@ jobs:
           npm run clean
           npm test || true
 
+      - name: Add Allure environment and categories
+        if: always()
+        run: |
+          mkdir -p allure-results
+          cp src/helper/report/environment.properties allure-results/environment.properties
+          cp src/helper/report/categories.json allure-results/categories.json
+          echo "BROWSER=${{ matrix.browser }}" >> allure-results/environment.properties
+
       - name: Check allure-results exists
         if: always()
         run: |
@@ -107,14 +115,22 @@ jobs:
           name: allure-results-webkit
           path: allure-results/webkit
 
-      - name: Merge and check allure-results
+      - name: Restore Allure history
+        continue-on-error: true
+        run: |
+          git fetch origin gh-pages --depth=1
+          mkdir -p allure-results/merged/history
+          git show origin/gh-pages:history 2>/dev/null | tar -x -C allure-results/merged/history || true
+          echo "History restored (if available)"
+
+      - name: Merge allure-results
         run: |
           mkdir -p allure-results/merged
           cp -r allure-results/chrome/. allure-results/merged/ 2>/dev/null || true
           cp -r allure-results/firefox/. allure-results/merged/ 2>/dev/null || true
           cp -r allure-results/webkit/. allure-results/merged/ 2>/dev/null || true
           echo "Merged allure-results:"
-          ls -la allure-results/merged/ || echo "No results to merge"
+          ls -la allure-results/merged/
 
       - name: Generate Allure Report
         run: npx allure generate allure-results/merged --clean -o allure-report
