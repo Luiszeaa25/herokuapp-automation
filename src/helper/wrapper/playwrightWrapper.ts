@@ -25,15 +25,22 @@ export default class PlaywrightWrapper {
     }
 
     async dragTo(source: Locator, target: Locator) {
-        await source.hover();
-        await this.page.mouse.down();
-        const box = await target.boundingBox();
-        if (!box) throw new Error(`Target element not visible or not found`);
-        await this.page.mouse.move(
-            box.x + box.width / 2,
-            box.y + box.height / 2,
-            { steps: 10 }
-        );
-        await this.page.mouse.up();
+        await source.waitFor({ state: "visible" });
+        await target.waitFor({ state: "visible" });
+
+        const srcSelector = await source.evaluate(el => '#' + el.id);
+        const tgtSelector = await target.evaluate(el => '#' + el.id);
+
+        await this.page.evaluate(({ src, tgt }) => {
+            const srcEl = document.querySelector(src);
+            const tgtEl = document.querySelector(tgt);
+            if (!srcEl || !tgtEl) throw new Error(`Element not found: ${src} or ${tgt}`);
+            const dataTransfer = new DataTransfer();
+            srcEl.dispatchEvent(new DragEvent('dragstart', { bubbles: true, dataTransfer }));
+            tgtEl.dispatchEvent(new DragEvent('dragenter', { bubbles: true, dataTransfer }));
+            tgtEl.dispatchEvent(new DragEvent('dragover',  { bubbles: true, dataTransfer }));
+            tgtEl.dispatchEvent(new DragEvent('drop',      { bubbles: true, dataTransfer }));
+            srcEl.dispatchEvent(new DragEvent('dragend',   { bubbles: true, dataTransfer }));
+        }, { src: srcSelector, tgt: tgtSelector });
     }
 }

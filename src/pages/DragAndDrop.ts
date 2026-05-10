@@ -20,7 +20,7 @@ export class DragDrop {
     }
 
     async dragAtoB() {
-        await this.columnA.dragTo(this.columnB);
+        await this.wrapper.dragTo(this.columnA, this.columnB);
     }
 
     async verifyAtoBSwap() {
@@ -29,7 +29,7 @@ export class DragDrop {
     }
 
     async dragBtoA() {
-        await this.columnB.dragTo(this.columnA);
+        await this.wrapper.dragTo(this.columnB, this.columnA);
     }
 
     async verifyBtoASwap() {

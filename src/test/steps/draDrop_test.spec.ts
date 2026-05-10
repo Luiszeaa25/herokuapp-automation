@@ -21,7 +21,7 @@ When('The user drags element B and drops it on element A', async function () {
     await fixture.dragDrop.dragBtoA();
 });
 
-Then('The Element B should be located at the position of element A and Element A should be located at the position of element B', async function () {
+Then('The element B should be located at the position of element A and Element A should be located at the position of element B', async function () {
     fixture.logger.info('Verificando posiciones después de B→A');
     await fixture.dragDrop.verifyBtoASwap();
 });
@@ -38,5 +38,4 @@ Then('Element B should be located at its original position', async function () {
 
 Then('Element A should be located at its original position', async function () {
     fixture.logger.info('Verificando posición original de A');
-    // ya validado en verifyOriginalPosition, paso informativo
 });

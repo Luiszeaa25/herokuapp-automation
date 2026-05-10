@@ -1,5 +1,5 @@
 @dragdrop
-Feature:  Drag and Drop Functionality on Herokuapp
+Feature: Drag and Drop Functionality on Herokuapp
 
     As a user of the Herokuapp, I want to be able to drag and drop elements on
     the page.
@@ -13,13 +13,11 @@ Feature:  Drag and Drop Functionality on Herokuapp
 
             When The user drags element A and drops it on element B
             Then The element A should be located at the position of element B and Element B should be located at the position of element A
-            
 
         Scenario: Drag and Drop element B to element A
 
             When The user drags element B and drops it on element A
             Then The element B should be located at the position of element A and Element A should be located at the position of element B
-
 
         Scenario: Drag and Drop element B to element A and then back to original position
 
