@@ -1,26 +1,24 @@
-import {createLogger, format, transports } from 'winston';
+import { createLogger, format, transports } from 'winston';
 import fs from 'fs';
 import path from 'path';
 
 const logDir = path.resolve(process.cwd(), 'logs');
-if (!fs.existsSync(logDir)){
-    fs.mkdirSync(logDir, {recursive: true});
+if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir, { recursive: true });
 }
 
 const customFormat = format.printf(({ timestamp, level, message }) => {
     return `${timestamp} [${level}]: ${message}`;
 });
 
-export const logger = createLogger({
+export const options = (scenarioName: string) => ({
     level: 'info',
     format: format.combine(
         format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
         format.errors({ stack: true }),
-        format.splat(),
-        format.json()
+        customFormat
     ),
     transports: [
-        
         new transports.Console({
             format: format.combine(
                 format.colorize(),
@@ -28,13 +26,8 @@ export const logger = createLogger({
                 customFormat
             )
         }),
-        
         new transports.File({
-            filename: path.join(logDir, 'combined.log'),
-            format: format.combine(
-                format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-                customFormat
-            )
+            filename: path.join(logDir, `${scenarioName}.log`)
         })
     ]
 });

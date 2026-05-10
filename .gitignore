@@ -6,3 +6,9 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Logs
+/logs/
+
+# Environment files (never commit credentials)
+src/helper/env/.env.*
