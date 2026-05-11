@@ -1,6 +1,6 @@
 @allure.label.suite:Login
 @allure.label.epic:Herokuapp
-@allure.label.story:Login Functionality
+@allure.label.story:Login_Functionality
 @login
 Feature: Login Functionality on Herokuapp
 
@@ -29,10 +29,10 @@ Feature: Login Functionality on Herokuapp
             Then The user should see "<errorType>" error message
 
             Examples:
-                | username | password              | errorType              |
-                | invalid  | SuperSecretPassword!  | invalidUsername        |
-                | tomsmith | wrongpassword         | invalidPassword        |
-                |          |                       | emptyUsernameAndPass   |
-                |          | SuperSecretPassword!  | emptyUsername          |
-                | tomsmith |                       | emptyPassword          |
+                | username | password              | errorType                |
+                | invalid  | SuperSecretPassword!  | invalidUsername          |
+                | tomsmith | wrongpassword         | invalidPassword          |
+                |          |                       | emptyUsernameAndPass     |
+                |          | SuperSecretPassword!  | emptyUsername            |
+                | tomsmith |                       | emptyPassword            |
                 | invalid  |                       | emptyPasswordInvalidUser |

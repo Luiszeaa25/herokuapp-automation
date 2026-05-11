@@ -1,0 +1,3 @@
+2026-05-10 15:04:23 [info]: Navegación a la página de login de Herokuapp
+2026-05-10 15:04:24 [info]: Autentificación con el usuario: 
+2026-05-10 15:04:24 [info]: Validando mensaje de error esperado: emptyUsername

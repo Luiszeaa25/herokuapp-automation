@@ -1,0 +1,14 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"As a user of the Herokuapp, I want to be able to drag and drop elements on
+    the page.","1070","Drag and Drop element B to element A and then back to original position","","2026-05-10","passed","2026-05-10","","DragAndDrop","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1351","Failed login with invalid credentials","","2026-05-10","passed","2026-05-10","","Login","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1299","Failed login with invalid credentials","","2026-05-10","passed","2026-05-10","","Login","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1452","Successful login with valid credentials","","2026-05-10","passed","2026-05-10","","Login","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1447","Failed login with invalid credentials","","2026-05-10","passed","2026-05-10","","Login","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1313","Failed login with invalid credentials","","2026-05-10","passed","2026-05-10","","Login","",""
+"As a user of the Herokuapp, I want to be able to drag and drop elements on
+    the page.","1073","Drag and Drop element B to element A","","2026-05-10","passed","2026-05-10","","DragAndDrop","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1501","Failed login with invalid credentials","","2026-05-10","passed","2026-05-10","","Login","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1300","Failed login with invalid credentials","","2026-05-10","passed","2026-05-10","","Login","",""
+"As a user of the Herokuapp, I want to be able to drag and drop elements on
+    the page.","1375","Drag and Drop element A to element B","","2026-05-10","passed","2026-05-10","","DragAndDrop","",""

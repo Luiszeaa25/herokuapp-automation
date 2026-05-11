@@ -1,6 +1,6 @@
 @allure.label.suite:DragAndDrop
 @allure.label.epic:Herokuapp
-@allure.label.story:Drag and Drop Functionality
+@allure.label.story:DragAndDrop_Functionality
 @dragdrop
 Feature: Drag and Drop Functionality on Herokuapp
 
@@ -11,6 +11,7 @@ Feature: Drag and Drop Functionality on Herokuapp
         Given The user is on the Herokuapp Drag and Drop page
 
     Rule: Drag and Drop functionality
+
         @smoke @regression @sanity
         Scenario: Drag and Drop element A to element B
 

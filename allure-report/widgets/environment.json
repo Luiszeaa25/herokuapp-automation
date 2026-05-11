@@ -1,0 +1,1 @@
+[{"values":["https://the-internet.herokuapp.com/"],"name":"BASEURL"},{"values":["prod"],"name":"ENV"},{"values":["Playwright + Cucumber BDD"],"name":"FRAMEWORK"},{"values":["TypeScript"],"name":"LANGUAGE"}]

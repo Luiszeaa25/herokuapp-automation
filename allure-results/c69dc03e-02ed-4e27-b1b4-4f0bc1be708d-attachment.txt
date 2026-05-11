@@ -1,0 +1,3 @@
+2026-05-10 15:04:25 [info]: Navegación a la página de login de Herokuapp
+2026-05-10 15:04:26 [info]: Autentificación con el usuario: invalid
+2026-05-10 15:04:27 [info]: Validando mensaje de error esperado: emptyPasswordInvalidUser

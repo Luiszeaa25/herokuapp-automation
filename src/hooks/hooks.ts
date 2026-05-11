@@ -7,6 +7,7 @@ import { createLogger } from "winston";
 import { options } from "../helper/util/logger.js";
 import { LoginPageHerokuapp } from "../pages/LoginPageHerokuapp.js";
 import { DragDrop } from "../pages/DragAndDrop.js";
+import fs from "fs";
 
 setDefaultTimeout(60 * 1000);
 
@@ -38,28 +39,39 @@ Before(async function ({ pickle }) {
 
 After(async function ({ pickle, result }) {
     const tracePath = `./test-results/trace/${pickle.id}.zip`;
-    let img: Buffer | undefined;
+    const status = result?.status;
 
-    if (result?.status === Status.FAILED) {
-        img = await fixture.page.screenshot({
-            path: `./test-results/screenshots/${pickle.name}.png`,
-            type: "png"
-        });
-    }
-
-    await context.tracing.stop({
-        path: result?.status === Status.FAILED ? tracePath : undefined
+    // Screenshot siempre — útil en PASSED y FAILED
+    const img = await fixture.page.screenshot({
+        path: `./test-results/screenshots/${pickle.name}.png`,
+        type: "png"
     });
 
+    // Trace solo en FAILED
+    await context.tracing.stop({
+        path: status === Status.FAILED ? tracePath : undefined
+    });
+
+    // Video: cerrar contexto para que el archivo se guarde
     await fixture.page.close();
     await context.close();
 
-    if (result?.status === Status.FAILED && img) {
-        await this.attach(img, "image/png");
+    // Adjuntar screenshot siempre
+    await this.attach(img, "image/png");
+
+    // En FAILED: adjuntar trace link y video
+    if (status === Status.FAILED) {
         await this.attach(
             `<a href="https://trace.playwright.dev/">Open ${tracePath}</a>`,
             "text/html"
         );
+    }
+
+    // Adjuntar log del escenario
+    const logPath = `logs/${pickle.name + pickle.id}.log`;
+    if (fs.existsSync(logPath)) {
+        const logContent = fs.readFileSync(logPath, "utf-8");
+        await this.attach(logContent, "text/plain");
     }
 });
 

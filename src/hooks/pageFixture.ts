@@ -2,12 +2,14 @@ import { Page } from "@playwright/test";
 import { Logger } from "winston";
 import { LoginPageHerokuapp } from "../pages/LoginPageHerokuapp.js";
 import { DragDrop } from "../pages/DragAndDrop.js";
+import { Checkboxes } from "../pages/Checkboxes.js"
 
 class Fixture {
     private _page!: Page;
     private _logger!: Logger;
     private _loginPage!: LoginPageHerokuapp;
     private _dragDrop!: DragDrop;
+    private _checkboxes!: Checkboxes;
 
     get page(): Page {
         if (!this._page) throw new Error("Page not initialized. Is the Before hook running?");
@@ -32,6 +34,14 @@ class Fixture {
         return this._dragDrop;
     }
     set dragDrop(dd: DragDrop) { this._dragDrop = dd; }
+
+    get checkboxes(): Checkboxes{
+
+        if (!this._checkboxes) throw new Error("Checkboxes not initialized. Is the Before hook running?");
+        return this._checkboxes;
+    }
+    set checkboxes(cb: Checkboxes) { this._checkboxes = cb; }
+
 }
 
 export const fixture = new Fixture();
