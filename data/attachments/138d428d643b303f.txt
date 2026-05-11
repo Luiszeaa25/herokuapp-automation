@@ -1,0 +1,2 @@
+2026-05-11 19:25:13 [info]: Navegando a la página de checkboxes
+2026-05-11 19:25:14 [info]: Validando estado inicial de los checkboxes

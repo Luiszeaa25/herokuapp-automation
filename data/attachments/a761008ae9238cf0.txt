@@ -1,4 +1,0 @@
-2026-05-11 04:25:47 [info]: Navegación a la página de login de Herokuapp
-2026-05-11 04:25:48 [info]: Autentificación con el usuario: tomsmith
-2026-05-11 04:25:49 [info]: Verificando mensaje de éxito en pantalla
-2026-05-11 04:25:49 [info]: Validando redirección exitosa a la Home Page
