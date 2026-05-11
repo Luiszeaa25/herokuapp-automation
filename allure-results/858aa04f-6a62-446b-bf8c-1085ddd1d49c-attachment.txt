@@ -1,3 +1,0 @@
-2026-05-10 15:04:24 [info]: Navegación a la página de login de Herokuapp
-2026-05-10 15:04:25 [info]: Autentificación con el usuario: tomsmith
-2026-05-10 15:04:25 [info]: Validando mensaje de error esperado: emptyPassword

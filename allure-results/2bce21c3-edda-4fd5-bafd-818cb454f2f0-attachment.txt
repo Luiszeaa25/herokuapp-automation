@@ -1,0 +1,3 @@
+2026-05-10 22:27:18 [info]: Navegando a la página de checkboxes
+2026-05-10 22:27:19 [info]: Deselección del checkbox2
+2026-05-10 22:27:19 [info]: Validando deselección del checkbox2

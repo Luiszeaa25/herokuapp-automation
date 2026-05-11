@@ -1,0 +1,4 @@
+2026-05-10 22:27:23 [info]: Navegando a la página de Drag and Drop
+2026-05-10 22:27:23 [info]: Arrastrando elementos de vuelta a posición original
+2026-05-10 22:27:23 [info]: Verificando posición original de B
+2026-05-10 22:27:23 [info]: Verificando posición original de A
