@@ -1,0 +1,15 @@
+{
+"errorMessages":{
+    
+    "invalidCredentials": "Your username is invalid!",
+    "invalidPassword": "Your password is invalid!",
+    "invalidUsername": "Your username is invalid!",
+    "emptyUsernameAndPass": "Your username is invalid!",
+    "emptyUsername": "Your username is invalid!",
+    "emptyPassword": "Your password is invalid!",
+    "emptyPasswordInvalidUser": "Your username is invalid!"
+},
+
+"successMessage": "You logged into a secure area!"
+
+}
