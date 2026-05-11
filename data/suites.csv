@@ -1,0 +1,24 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"As a user of the Herokuapp, I want to be able to drag and drop elements on
+    the page.","165","Drag and Drop element B to element A","","2026-05-11","passed","2026-05-11","","DragAndDrop","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1252","Failed login with invalid credentials","","2026-05-11","passed","2026-05-11","","Login","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1280","Failed login with invalid credentials","","2026-05-11","passed","2026-05-11","","Login","",""
+"As a user of the Herokuapp, I want to be able to select and deselect the Checkboxes
+on the page.","153","The user will validate that when entering in the page /checkboxes, checkbox1 is unchecked and checkbox2 is checked","","2026-05-11","passed","2026-05-11","","Checkboxes","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","606","Successful login with valid credentials","","2026-05-11","passed","2026-05-11","","Login","",""
+"As a user of the Herokuapp, I want to be able to select and deselect the Checkboxes
+on the page.","162","The user will select and validate checkbox2","","2026-05-11","passed","2026-05-11","","Checkboxes","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1164","Failed login with invalid credentials","","2026-05-11","passed","2026-05-11","","Login","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1206","Failed login with invalid credentials","","2026-05-11","passed","2026-05-11","","Login","",""
+"As a user of the Herokuapp, I want to be able to select and deselect the Checkboxes
+on the page.","183","The user will select and validate checkbox1","","2026-05-11","passed","2026-05-11","","Checkboxes","",""
+"As a user of the Herokuapp, I want to be able to drag and drop elements on
+    the page.","165","Drag and Drop element A to element B","","2026-05-11","passed","2026-05-11","","DragAndDrop","",""
+"As a user of the Herokuapp, I want to be able to drag and drop elements on
+    the page.","152","Drag and Drop element B to element A and then back to original position","","2026-05-11","passed","2026-05-11","","DragAndDrop","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1332","Failed login with invalid credentials","","2026-05-11","passed","2026-05-11","","Login","",""
+"As a user of the Herokuapp, I want to be able to select and deselect the Checkboxes
+on the page.","147","The user will deselect and validate checkbox2","","2026-05-11","passed","2026-05-11","","Checkboxes","",""
+"As a user of the Herokuapp, I want to be able to select and deselect the Checkboxes
+on the page.","163","The user will  deselect and validate checkbox1","","2026-05-11","passed","2026-05-11","","Checkboxes","",""
+"As a user of the Herokuapp, I want to be able to login to the application.","1141","Failed login with invalid credentials","","2026-05-11","passed","2026-05-11","","Login","",""

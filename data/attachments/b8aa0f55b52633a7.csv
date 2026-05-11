@@ -1,0 +1,7 @@
+username,password,errorType
+invalid,SuperSecretPassword!,invalidUsername
+tomsmith,wrongpassword,invalidPassword
+,,emptyUsernameAndPass
+,SuperSecretPassword!,emptyUsername
+tomsmith,,emptyPassword
+invalid,,emptyPasswordInvalidUser

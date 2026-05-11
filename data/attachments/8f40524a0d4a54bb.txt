@@ -1,0 +1,3 @@
+2026-05-11 04:25:51 [info]: Navegación a la página de login de Herokuapp
+2026-05-11 04:25:52 [info]: Autentificación con el usuario: tomsmith
+2026-05-11 04:25:52 [info]: Validando mensaje de error esperado: invalidPassword
